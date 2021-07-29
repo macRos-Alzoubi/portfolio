@@ -49,6 +49,7 @@ import CardsFooter from "components/Footers/CardsFooter.js";
 
 // index page sections
 import Download from "../IndexSections/Download.js";
+import { Link } from "react-router-dom";
 
 class Landing extends React.Component {
   state = {};
@@ -81,15 +82,13 @@ class Landing extends React.Component {
                   <Row>
                     <Col lg="6">
                       <h1 className="display-3 text-white">
-                        A beautiful Design System{" "}
-                        <span>completed with examples</span>
+                        As A Full Stack Web Dev.{" "}
+                        {/* <span>completed with examples</span> */}
                       </h1>
                       <p className="lead text-white">
-                        The design system comes with four pre-built pages to
-                        help you get started faster. You can change the text and
-                        images and you're good to go.
+                      I'm so excited to be a member of this large community and to learn more about new things and dive deeper into the web world.
                       </p>
-                      <div className="btn-wrapper">
+                      {/* <div className="btn-wrapper">
                         <Button
                           className="btn-icon mb-3 mb-sm-0"
                           color="info"
@@ -112,7 +111,7 @@ class Landing extends React.Component {
                             Download React
                           </span>
                         </Button>
-                      </div>
+                      </div> */}
                     </Col>
                   </Row>
                 </div>
@@ -140,22 +139,25 @@ class Landing extends React.Component {
             <Container>
               <Row className="justify-content-center">
                 <Col lg="12">
-                  <Row className="row-grid">
+                  <Row className="mb-5">
+                    <Col lg="12">
+                      <h3 className="display-3 text-white text-center">Projects</h3>
+                    </Col>
+                  </Row>
+                  <Row className="row-grid mb-7">
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                          {/* <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
                             <i className="ni ni-check-bold" />
-                          </div>
+                          </div> */}
                           <h6 className="text-primary text-uppercase">
-                            Download Argon
+                            Salmon Cookies 
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                            Creating a dynamic table based on form input.
                           </p>
-                          <div>
+                          {/* <div>
                             <Badge color="primary" pill className="mr-1">
                               design
                             </Badge>
@@ -165,33 +167,32 @@ class Landing extends React.Component {
                             <Badge color="primary" pill className="mr-1">
                               creative
                             </Badge>
-                          </div>
+                          </div> */}
                           <Button
                             className="mt-4"
                             color="primary"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            href="https://github.com/macRos-Alzoubi/cookie-stand"
+                            target="_blank"
                           >
                             Learn more
                           </Button>
+
                         </CardBody>
                       </Card>
                     </Col>
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
+                          {/* <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
                             <i className="ni ni-istanbul" />
-                          </div>
+                          </div> */}
                           <h6 className="text-success text-uppercase">
-                            Build Something
+                            Bus-Mall 
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                            It's a voting website where a user votes for a specific product list and at the end, a bar chart will be viewed containing all voting details.
                           </p>
-                          <div>
+                          {/* <div>
                             <Badge color="success" pill className="mr-1">
                               business
                             </Badge>
@@ -201,12 +202,12 @@ class Landing extends React.Component {
                             <Badge color="success" pill className="mr-1">
                               success
                             </Badge>
-                          </div>
+                          </div> */}
                           <Button
                             className="mt-4"
                             color="success"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            href="https://github.com/macRos-Alzoubi/busMall"
+                            target="_blank"
                           >
                             Learn more
                           </Button>
@@ -216,18 +217,16 @@ class Landing extends React.Component {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                          {/* <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
                             <i className="ni ni-planet" />
-                          </div>
+                          </div> */}
                           <h6 className="text-warning text-uppercase">
-                            Prepare Launch
+                            Sinbad 
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                            Sinbad is an online flight booking website it solves the issue of being physically in a booking office with Sinbad you can book a flight at any time any place.
                           </p>
-                          <div>
+                          {/* <div>
                             <Badge color="warning" pill className="mr-1">
                               marketing
                             </Badge>
@@ -237,12 +236,12 @@ class Landing extends React.Component {
                             <Badge color="warning" pill className="mr-1">
                               launch
                             </Badge>
-                          </div>
+                          </div> */}
                           <Button
                             className="mt-4"
                             color="warning"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            href="https://github.com/Vikings-MLART/sinbad"
+                            target="_blank"
                           >
                             Learn more
                           </Button>
@@ -250,11 +249,82 @@ class Landing extends React.Component {
                       </Card>
                     </Col>
                   </Row>
+                  <Row className="row-grid">
+                    <Col lg="4">
+                        <Card className="card-lift--hover shadow border-0">
+                          <CardBody className="py-5">
+                            {/* <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                              <i className="ni ni-planet" />
+                            </div> */}
+                            <h6 className="text-dark text-uppercase">
+                              Grades Tracker
+                            </h6>
+                            <p className="description mt-3">
+                              Web App That Tracks Students Courses and Their Grades.
+                            </p>
+                            {/* <div>
+                              <Badge color="warning" pill className="mr-1">
+                                marketing
+                              </Badge>
+                              <Badge color="warning" pill className="mr-1">
+                                product
+                              </Badge>
+                              <Badge color="warning" pill className="mr-1">
+                                launch
+                              </Badge>
+                            </div> */}
+                            <Button
+                              className="mt-4"
+                              color="dark"
+                              href="https://github.com/macRos-Alzoubi/Grades-Tracker"
+                              target="_blank"
+                            >
+                              Learn more
+                            </Button>
+                          </CardBody>
+                        </Card>
+                      </Col>
+                    <Col lg="4">
+                        <Card className="card-lift--hover shadow border-0">
+                          <CardBody className="py-5">
+                            {/* <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                              <i className="ni ni-planet" />
+                            </div> */}
+                            <h6 className="text-gray-dark text-uppercase">
+                              Horned Beast
+                            </h6>
+                            <p className="description mt-3">
+                              React App Displays A collection Of Horned Beast. You Can Add Liks To Them View Them And Filter Them.
+                            </p>
+                            {/* <div>
+                              <Badge color="warning" pill className="mr-1">
+                                marketing
+                              </Badge>
+                              <Badge color="warning" pill className="mr-1">
+                                product
+                              </Badge>
+                              <Badge color="warning" pill className="mr-1">
+                                launch
+                              </Badge>
+                            </div> */}
+                            <Button
+                              className="mt-4"
+                              color="light"
+                              href="https://github.com/macRos-Alzoubi/React_HornedBeast"
+                              target="_blank"
+                            >
+                              Learn more
+                            </Button>
+                          </CardBody>
+                        </Card>
+                      </Col>
+                  </Row>
                 </Col>
               </Row>
             </Container>
           </section>
-          <section className="section section-lg">
+          
+          {/* <section className="section section-lg">
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-md-2" md="6">
@@ -489,7 +559,7 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-            {/* SVG separator */}
+            SVG separator 
             <div className="separator separator-bottom separator-skew zindex-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -769,7 +839,7 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-            {/* SVG separator */}
+            SVG separator
             <div className="separator separator-bottom separator-skew zindex-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -860,8 +930,8 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
-          <Download />
+          </section> 
+          <Download />*/}
         </main>
         <CardsFooter />
       </>
